@@ -1,5 +1,5 @@
 {
-  "name": "restv3",
+  "name": "huub-restv3",
   "version": "0.3.1",
   "description": "api rest",
   "scripts": {

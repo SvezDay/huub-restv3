@@ -52,12 +52,12 @@ let server = app.listen(port);
 // ====================================================== CORS
 
 let allowCrossDomain = (req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "http://localhost:8100", "https://ublimpwa.firebaseapp.com");
+    res.header("Access-Control-Allow-Origin", "http://localhost:8100", "https://huub-appv4.firebaseapp.com");
     res.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization, X-Auth-Token, x-access-token");
     next();
 };
-let whitelist = ["http://localhost:4200", "http://localhost:5000", "https://rudlabquickapp2.herokuapp.com"];
+let whitelist = ["http://localhost:8100", "https://huub-appv4.firebaseapp.com"];
 
 let corsOptions = {
     origin: (origin, callback) => {
